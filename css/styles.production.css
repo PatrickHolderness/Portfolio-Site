@@ -1,0 +1,319 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 version
+*/
+
+/*
+Colors used
+
+Text Color (Black): #000000;
+Primary Color (Beige): #ffe6b3;
+Secondary Color (Light Blue): #D0D7D9;
+ */
+
+* {
+   -webkit-box-sizing: border-box;
+           box-sizing: border-box;
+ }
+
+
+body{
+    background-color: $primary-color;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.3;
+    background-color: #ffe6b3;
+}
+
+h1{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 2.2;
+    text-align: center;
+
+}
+
+h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.8;
+    text-align: justify;
+  }
+
+h3{
+  font-family: 'Source Sans Pro', inherit;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: justify;
+}
+  a{
+      color: black;
+  }
+
+  a:visited {
+      color: #444849;
+  }
+
+  a:hover,
+  a:focus {
+      text-decoration: none;
+  }
+
+  a:active {
+      color: blue;
+  }
+  button,
+  .button,
+  a.button:link {
+    border: none;
+    display: inline-block;
+    font-family: inherit;
+    background-color: #ADD8E6;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
+    -webkit-transition-duration: 0.5s opacity;
+         -o-transition-duration: 0.5s opacity;
+            transition-duration: 0.5s opacity;
+  }
+
+  button:hover,
+  button:focus,
+  .button:hover,
+  .button:focus {
+    cursor: pointer;
+    opacity: 0.75;
+  }
+
+  input[type="tel"],
+  input[type="email"],
+  textarea {
+    width: 300px;
+    margin-bottom: 10px;
+  }
+
+  button:hover,
+  button:focus
+ .button:hover,
+ .button:focus {
+    cursor: pointer;
+    opacity: 0.6;
+  }
+
+  input[type="tel"],
+  input[type="email"],
+  textarea {
+    width: 300px;
+    margin-bottom: 10px;
+  }
+
+  table {
+    margin: auto;
+    margin-top: 35px;
+  }
+
+  .navigation-list__item--active {
+    text-decoration: underline;
+  }
+  .page-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    padding: 20px;
+  }
+  .page-header__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 200px;
+            flex: 0 1 200px;
+  }
+  .page-header__item:last-child {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    text-align: right;
+  }
+
+  .page-footer {
+  clear: both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  }
+
+  .profile__portrait {
+  float: left;
+  width: 250px;
+  margin-right: 40px;
+  max-width: 400px;
+  border-radius: 70%;
+
+}
+
+.profile {
+  width: 50%;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align:center;
+  padding-top: 20px
+}
+
+
+
+  .navigation-list {
+    list-style-type: none;
+  }
+  .navigation-list li {
+  display: inline-block;
+  margin-left: 15px;
+}
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns:1fr 20px 1fr 20px 1fr;
+  grid-template-columns:repeat(3,1fr);
+  grid-gap: 20px;
+  margin: 0;
+}
+.grid__item {
+  display:inline-block;
+  width: auto;
+  min-height: auto;
+  background-color: #b4e2f0;
+  padding: 10px;
+  margin: 10px;
+
+}
+
+  .grid__item:last-child {
+     -ms-grid-column: 3;
+     grid-column: 3 / 3;
+     -ms-grid-row: 1;
+     -ms-grid-row-span: 2;
+     grid-row: 1 / 3;
+   }
+   @-webkit-keyframes color-change {
+     0% {
+       fill: #edc655;
+     }
+     50% {
+       fill: #fcffad;
+     }
+     100% {
+       fill: #f76414;
+     }
+   }
+   @keyframes color-change {
+     0% {
+       fill: #edc655;
+     }
+     50% {
+       fill: #fcffad;
+     }
+     100% {
+       fill: #f76414;
+     }
+   }
+   .sun {
+  -webkit-animation: 15s color-change infinite alternate linear;
+          animation: 15s color-change infinite alternate linear;
+}
+@-webkit-keyframes cloud-move {
+  from {
+    -webkit-transform: translate(0, 50px);
+            transform: translate(0, 50px);
+  }
+  to {
+    -webkit-transform: translate(200px, 50px);
+            transform: translate(200px, 50px);
+  }
+}
+@keyframes cloud-move {
+  from {
+    -webkit-transform: translate(0, 50px);
+            transform: translate(0, 50px);
+  }
+  to {
+    -webkit-transform: translate(200px, 50px);
+            transform: translate(200px, 50px);
+  }
+}
+.cloud-front {
+  -webkit-animation: 35s cloud-move infinite alternate linear;
+          animation: 35s cloud-move infinite alternate linear;
+}
+@-webkit-keyframes cloud-move-reverse {
+  from {
+    -webkit-transform: translate(200px, 24px);
+            transform: translate(200px, 24px);
+  }
+  to {
+    -webkit-transform: translate(800px, 24px);
+            transform: translate(800px, 24px);
+  }
+}
+@keyframes cloud-move-reverse {
+  from {
+    -webkit-transform: translate(200px, 24px);
+            transform: translate(200px, 24px);
+  }
+  to {
+    -webkit-transform: translate(800px, 24px);
+            transform: translate(800px, 24px);
+  }
+}
+.cloud-back {
+  -webkit-animation: 25s cloud-move-reverse infinite alternate linear;
+          animation: 25s cloud-move-reverse infinite alternate linear;
+}
+   @media all and (max-width: 500px) {
+  .grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  h1 {
+    font-size: 22px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .grid {
+    -ms-grid-columns: 1;
+    grid-template-columns: 1;
+  }
+}
+@media all and (min-width: 500px) and (max-width: 750px){
+  .grid {
+    -ms-grid-columns: 1fr 10px 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media all and (max-width: 750px) {
+  .grid {
+    grid-gap: 8px;
+  }
+  .projects-grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  h1 {
+    font-size: 22px;
+  }
+}
