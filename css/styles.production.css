@@ -20,7 +20,6 @@ Secondary Color (Light Blue): #D0D7D9;
 
 
 body{
-    background-color: $primary-color;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -46,7 +45,7 @@ h2 {
   }
 
 h3{
-  font-family: 'Source Sans Pro', inherit;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 17px;
   font-weight: 700;
   line-height: 1.5;
@@ -79,9 +78,12 @@ h3{
     text-decoration: none;
     padding: 10px;
     border-radius: 3px;
-    -webkit-transition-duration: 0.5s opacity;
-         -o-transition-duration: 0.5s opacity;
-            transition-duration: 0.5s opacity;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity;
   }
 
   button:hover,
@@ -306,8 +308,8 @@ h3{
 
 @media all and (max-width: 500px) {
   .grid {
-    -ms-grid-columns: 1;
-    grid-template-columns: 1;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 }
 @media all and (min-width: 500px) and (max-width: 750px){
